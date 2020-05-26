@@ -65,9 +65,8 @@ Mixin 跨链方案和交易所有些类似，但是是由去中心化的节点�
 ![DAG](https://wg.isdot.net/api/un/img?key=user-upload/12123326/012dd402cba298a5.png)
 
 - 可信执行环境（TEE）  
-
-Mixin 使用 Intel SGX 作为 TEE 的实现来进一步提升安全性，所有全节点都必须在可信执行环境中运行，确保全节点 “正在运行的代码” 的确是 “它声称正在运行的代码”，没有人能够在不被察觉的情况下改变可信执行环境里正在运行的代码。
-![](https://upload-images.jianshu.io/upload_images/647864-695ddd48e04a53e3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/640)
+  Mixin 使用 Intel SGX 作为 TEE 的实现来进一步提升安全性，所有全节点都必须在可信执行环境中运行，确保全节点 “正在运行的代码” 的确是 “它声称正在运行的代码”，没有人能够在不被察觉的情况下改变可信执行环境里正在运行的代码。
+  ![](https://upload-images.jianshu.io/upload_images/647864-695ddd48e04a53e3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/640)
 
 - 隐私增强
   通过 CryptoNote 技术加强 UTXO 交易隐私，交易只有双方知道，全节点也无法知道交易双方，也就是说无法根据交易本身推导出交易具体双方:
@@ -185,16 +184,16 @@ Mixin 使用 Intel SGX 作为 TEE 的实现来进一步提升安全性，所有�
 ### FAQ
 
 - Mixin 、Mixin Network 与 Mixin Messenger 什么关系？
-
-Mixin 是 Mixin Network 的简称，Mixin Messenger 是 Mixin Network 上第一个开源的 Dapp。由于历史原因，很长一段时间内 Mixin 被认为是 Mixin Messenger 。
+  Mixin 是 Mixin Network 的简称，Mixin Messenger 是 Mixin Network 上第一个开源的 Dapp。由于历史原因，很长一段时间内 Mixin 被认为是 Mixin Messenger 。
 
 - 免费转账大量发起垃圾交易怎么办？
-
-节点会向 Dapp 收取 API 调用费，参见扩展阅读 [Mixin Network 全节点的稳定经济模型](https://www.jianshu.com/p/12032052d560)。
+  节点会向 Dapp 收取 API 调用费，参见扩展阅读 [Mixin Network 全节点的稳定经济模型](https://www.jianshu.com/p/12032052d560)。
 
 - 白皮书里万亿 TPS 是怎么理解？
+  其实是用一个数字来形容 Mixin Network 的 TPS 没有理论上限，主网分布式网络的性能与传统服务器集群性能接近，可以简单的通过升级硬件和带宽、优化算法不断提升 TPS ，很容易就达到十万、百万甚至更高 TPS。理论没有上限这点很重要，不像 BTC 理论上限是非常有限的，你只能达到那个速度，现在全节点服务器中低配置就轻松达到了 3000 TPS。
 
-其实是用一个数字来形容 Mixin Network 的 TPS 没有理论上限，主网分布式网络的性能与传统服务器集群性能接近，可以简单的通过升级硬件和带宽、优化算法不断提升 TPS ，很容易就达到十万、百万甚至更高 TPS。理论没有上限这点很重要，不像 BTC 理论上限是非常有限的，你只能达到那个速度，现在全节点服务器中低配置就轻松达到了 3000 TPS。
+- 为什么我钱包里 BTC 充值地址在区块链浏览器链上查不到余额？
+  Mixin 的充值和提现不是同一个地址，用户充值后资产会按需转移至由所有全节点管理的多签地址，提现的时候需要超过 2/3 + 1 节点校验并签名后再从多签地址提现至目标地址。
 
 - 如何检查 Mixin 里的资产是真的链上资产？比如 BTC 
   Mixin 不会凭空产生资产，所有的资产都是通过外部充值进入 Mixin 网络，用户充值后资产会按需转移至由所有全节点管理的多签地址。如果想检查 Mixin 链上资产以 BTC 为例，需要累加 https://btc.com/1zgmvYi5x1wy3hUh7AjKgpcVgpA8Lj9FA 这个多签地址里所有转入地址的余额再加上多签地址的余额，该数值不会等于 https://mixin.one/network/assets 里 BTC 的数量，因为有些地址的资产还没有被归集所以没有累加到。

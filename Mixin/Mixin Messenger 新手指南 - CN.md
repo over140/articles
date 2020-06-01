@@ -32,7 +32,7 @@ Mixin Messenger 上有许多机器人（类似微信小程序）实现了各种�
 下面分享一些常用的机器人，快来试试吧：
 
 - 💰学习区块链知识还能赚 BTC ？快来[TaskWall](https://mixin.one/users/e08207df-55de-4ad9-8463-af692824f988)机器人，除了答题奖励更有抽奖和翻倍奖励，更多点击[活动介绍](https://w3c.group/c/1587547803842182)。
-- 💵不想额外花钱买比特币？通过[水龙头](https://mixin.one/users/e08207df-55de-4ad9-8463-af692824f988)机器人日常网购返利赚 BTC 非常适合您！更多点击[活动介绍](https://w3c.group/c/1587630334804900)。
+- 💵不想额外花钱买比特币？通过[水龙头](https://mixin.one/users/1da1124a-9c97-4f2b-b332-f11f77c7604a)机器人日常网购返利赚 BTC 非常适合您！更多点击[活动介绍](https://w3c.group/c/1587630334804900)。
 - 💸想购买或出售加密货币？ [ExinOne](https://mixin.one/users/61103d28-3ac2-44a2-ae34-bd956070dab1)或[FoxOTC](https://mixin.one/users/fb523769-e4f9-4148-b16d-1ca0edcdb955)都很好用，不想 KYC 还可以通过[ExinLocal](https://mixin.one/users/f2397b7a-ddfc-4bd9-925a-e14a9a553ba5)进行点对点交易
 - 🧧想给好友发个红包？把[红包](https://mixin.one/users/1ab1f241-b809-4790-bcfd-a1779bb1d313)加为联系人再加到你的群组里，从群聊➕菜单里点击机器人开始发红包吧
 - 🛒想买卖商品和服务？[安信购物](https://mixin.one/users/076ecd36-4c8e-4a12-9aa2-d541bdbba58d)什么都有
